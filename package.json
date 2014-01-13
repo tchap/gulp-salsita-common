@@ -1,0 +1,7 @@
+{
+  "name": "gulp-salsita-common",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "3.3.1"
+  }
+}
