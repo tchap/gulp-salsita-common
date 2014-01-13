@@ -16,5 +16,5 @@ gulp.task('publish', function() {
       './lib',
       './package.json'
   ])
-  .pipe(common.publishArtifacts);
+  .pipe(common.publishAsArtifact);
 });
