@@ -9,5 +9,8 @@ var common = require('./lib')
 gulp.task('publish', function() {
   // Pack the whole module as an artifacts and publish it.
   return gulp.src('*')
-  .pipe(common.publishAsArtifact);
+  .pipe(common.publishAsArtifact({
+    storeURL:      'http://artifacts/upload/',
+    projectSecret: 'MNGmSCNK3xTSbEMVJUwQ'
+  }));
 });
