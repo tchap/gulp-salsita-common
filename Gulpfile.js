@@ -7,14 +7,7 @@ var common = require('./lib')
   , gulp   = require('gulp');
 
 gulp.task('publish', function() {
-  return gulp.src([
-      './AUTHORS',
-      './Gulpfile.js',
-      './LICENSE',
-      './README.md',
-      './index.js',
-      './lib',
-      './package.json'
-  ])
+  // Pack the whole module as an artifacts and publish it.
+  return gulp.src('*')
   .pipe(common.publishAsArtifact);
 });
